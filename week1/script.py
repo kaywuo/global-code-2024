@@ -4,12 +4,12 @@ age = input("what is your age? ")
 
 intage = int(age)
 
-y = "years" if int(age) > 1 else "year"
+y = "years" if intage > 1 else "year"
 
 if intage <= 0:
-    print("Age is less than 0")
+    print("You have entered a wrong age, you can't play game")
 
-if intage > 0  and intage <= 12:
+elif intage > 0  and intage <= 12:
 
     print("Hello " + name + " you're a child  of age " + age + " " + y + " old." )
 
