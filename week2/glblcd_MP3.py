@@ -9,12 +9,14 @@ class Person:
         return f"the boy can {self.speak} fluently in Asante Twi"
     
     def motion(self):
-        return "i can {self.walk} faster than Usain Bolt"
+        return f"i can {self.walk} faster than Usain Bolt"
     
     def description(self):
         return f"my name is {self.get_name} and i am {self.get_age}"
     
 rock = Person("talk", "run", "ansah", "14")
-k = rock.sound
+k = rock.sound()
 print(k)
+print(rock.description())
+print(rock.motion())
 
